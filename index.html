@@ -28,9 +28,6 @@
     font-size: 3em;
     text-align: center;
   }
-  h2 {
-    text-align: center;
-  }
   a {
     color: #fff;
     text-decoration: none;
@@ -76,6 +73,9 @@
     .clouds {
       height: 50%;
     }
+  }
+  .clouds-inner {
+    padding-top: 0.5em;
   }
   .mv, .stream {
     width: 70%;
@@ -143,6 +143,7 @@
   }
   i {
     cursor: pointer;
+    margin-top: 0.5em;
   }
   @media (orientation: portrait) {
     i {
@@ -154,10 +155,10 @@
 
 <body>
   <div class="clouds">
-    <div width="100%">
+    <div class="clouds-inner">
       <img width="60%" src="img/splash-tildeath1/title.png"/><br>
       <a href="https://s3.amazonaws.com/letter-racer/TILL+DEATH+DO+US+PART+I.zip"><img class="glow" height="50%" src="img/splash-tildeath1/carton.png"/></a>
-      <p><i onclick="turnPage()" class="fa fa-angle-down" aria-hidden="true"></i></p>
+      <br><i onclick="turnPage()" class="fa fa-angle-down" aria-hidden="true"></i>
     </div>
   </div>
   <div class="mv">
